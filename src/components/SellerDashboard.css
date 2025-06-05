@@ -1,5 +1,5 @@
 body.body-default {
-    background: url('../components/bg.png') no-repeat center center fixed;
+    background: url('./bg.png') no-repeat center center fixed;
          /* Ensures full viewport height */
           background-size: cover;
   display: flex;
