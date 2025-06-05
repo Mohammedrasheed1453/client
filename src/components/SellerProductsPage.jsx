@@ -9,7 +9,7 @@ const SellerProductsPage = () => {
 
   useEffect(() => {
     const token = localStorage.getItem('token');
-    axios.get('https://bidbuy.onrender.com/api/products/api/products/seller', {
+    axios.get('https://bidbuy.onrender.com/api/products/seller', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(res => setProducts(res.data))
@@ -34,11 +34,11 @@ const SellerProductsPage = () => {
   const saveEdit = async (id) => {
     const token = localStorage.getItem('token');
     try {
-      await axios.put(`https://bidbuy.onrender.com/api/products/api/products/${id}`, form, {
+      await axios.put(`https://bidbuy.onrender.com/api/products/${id}`, form, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setEditing(null);
-      const res = await axios.get('https://bidbuy.onrender.com/api/products/api/products/seller', {
+      const res = await axios.get('https://bidbuy.onrender.com/api/products/seller', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setProducts(res.data);
@@ -51,7 +51,7 @@ const SellerProductsPage = () => {
     if (!window.confirm('Are you sure you want to delete this product?')) return;
     const token = localStorage.getItem('token');
     try {
-      await axios.delete(`https://bidbuy.onrender.com/api/products/api/products/${id}`, {
+      await axios.delete(`https://bidbuy.onrender.com/api/products/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setProducts(products.filter(p => p._id !== id));
