@@ -42,7 +42,7 @@ const Signup = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/signup', trimmedData);
+      const res = await axios.post('https://bidbuy.onrender.com/api/products/api/auth/signup', trimmedData);
       alert(res.data.message);
     } catch (error) {
       // Show backend message if available
