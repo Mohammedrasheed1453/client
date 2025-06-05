@@ -103,7 +103,7 @@ const SearchResultsPage = () => {
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const searchTerm = params.get('q') || '';
-    axios.get('https://bidbuy.onrender.com/api/products/api/products/search', {
+    axios.get('https://bidbuy.onrender.com/api/products/search', {
       params: { search: searchTerm }
     })
       .then(res => {
@@ -134,7 +134,7 @@ const SearchResultsPage = () => {
     }
     try {
       await axios.post(
-        'https://bidbuy.onrender.com/api/products/api/cart/add',
+        'https://bidbuy.onrender.com/api/cart/add',
         { productId, quantity: 1 },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -147,7 +147,7 @@ const SearchResultsPage = () => {
 
   const handleBid = async () => {
     try {
-      const res = await axios.post('https://bidbuy.onrender.com/api/products/api/products/bargain', {
+      const res = await axios.post('https://bidbuy.onrender.com/api/products/bargain', {
         productId: bargainProduct._id,
         bid: Number(bid)
       });
