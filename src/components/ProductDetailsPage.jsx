@@ -88,7 +88,7 @@ const ProductDetailsPage = () => {
 
   const handleBid = async () => {
     try {
-      const res = await axios.post('https://bidbuy.onrender.com/api/products/api/products/bargain', {
+      const res = await axios.post('https://bidbuy.onrender.com/api/products/bargain', {
         productId: id,
         bid: Number(bid)
       });
@@ -111,7 +111,7 @@ const ProductDetailsPage = () => {
     }
     try {
       await axios.post(
-        'https://bidbuy.onrender.com/api/products/api/cart/add',
+        'https://bidbuy.onrender.com/api/cart/add',
         {
           productId: product._id,
           quantity: 1,
