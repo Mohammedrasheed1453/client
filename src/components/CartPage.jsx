@@ -1,51 +1,3 @@
-// import React,{useState,useEffect} from 'react'
-// import axios from 'axios'
-
-// const CartPage = () => {
-//      const [cartItems, setCartItems] = useState([]);
-// useEffect(() => {
-//     const fetchCart = async () => {
-//       const token = localStorage.getItem('token');
-//       const res = await axios.get('http://localhost:5000/api/cart', {
-//         headers: { Authorization: `Bearer ${token}` }
-//       });
-//       setCartItems(res.data.items);
-//     };
-//     fetchCart();
-//   }, []);
-
-//   const handleRemoveFromCart = async (productId) => {
-//     const token = localStorage.getItem('token');
-//     await axios.post(
-//       'http://localhost:5000/api/cart/remove',
-//       { productId },
-//       { headers: { Authorization: `Bearer ${token}` } }
-//     );
-//     setCartItems(cartItems.filter(item => item.product._id !== productId));
-//   };
-
-//   return (
-//     <div>
-//       <h2>Your Cart</h2>
-//       {cartItems.length === 0 ? (
-//         <p>Cart is empty.</p>
-//       ) : (
-//         <ul>
-//           {cartItems.map(item => (
-//             <li key={item.product._id}>
-//               <img src={item.product.imageUrl} alt={item.product.name} width={50} />
-//               <span>{item.product.name} (Qty: {item.quantity})</span>
-//               <button onClick={() => handleRemoveFromCart(item.product._id)}>
-//                 Remove
-//               </button>
-//             </li>
-//           ))}
-//         </ul>
-//       )}
-//     </div>
-//   );
-// };
-
 // export default CartPage;
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -70,7 +22,7 @@ const CartPage = () => {
   const handleRemoveFromCart = async (productId) => {
     const token = localStorage.getItem('token');
     await axios.post(
-      'http://localhost:5000/api/cart/remove',
+      'https://bidbuy.onrender.com/api/cart/remove',
       { productId },
       { headers: { Authorization: `Bearer ${token}` } }
     );
