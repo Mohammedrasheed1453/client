@@ -14,7 +14,7 @@ const Login = () => {
     const handleSubmit=async (e)=>{
         e.preventDefault();
         try{
-            const res=await axios.post('http://localhost:5000/api/auth/login',formData);
+            const res=await axios.post('https://bidbuy.onrender.com/api/auth/login',formData);
             console.log(res.data);
             alert(res.data.message);
           const user = { token: res.data.token, role: res.data.role };
