@@ -74,7 +74,7 @@ const ProductDetailsPage = () => {
   const [agreedPrice, setAgreedPrice] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/products/${id}`)
+    axios.get(`https://bidbuy.onrender.com/api/products/${id}`)
       .then(res => setProduct(res.data))
       .catch(err => console.error(err));
   }, [id]);
@@ -88,7 +88,7 @@ const ProductDetailsPage = () => {
 
   const handleBid = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/api/products/bargain', {
+      const res = await axios.post('https://bidbuy.onrender.com/api/products/api/products/bargain', {
         productId: id,
         bid: Number(bid)
       });
@@ -111,7 +111,7 @@ const ProductDetailsPage = () => {
     }
     try {
       await axios.post(
-        'http://localhost:5000/api/cart/add',
+        'https://bidbuy.onrender.com/api/products/api/cart/add',
         {
           productId: product._id,
           quantity: 1,
