@@ -1,0 +1,211 @@
+/* Base Styles */
+.customer__container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+}
+
+.customer__title {
+  text-align: center;
+  color: #1c1e1c;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Product Grid */
+.customer__product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Product Card */
+.customer__product-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.customer__product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.customer__product-image-wrapper {
+  width: 100%;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.customer__product-image {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.customer__product-info {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.customer__product-name {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.customer__product-desc {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.customer__product-price {
+  color: #B12704;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.customer__product-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.customer__product-action {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.customer__product-action--bargain {
+  background: #f0c14b;
+  color: #111;
+}
+
+.customer__product-action--bargain:hover {
+  background: #ddb347;
+}
+
+.customer__product-action--cart {
+  background: #007f00;
+  color: white;
+}
+
+.customer__product-action--cart:hover {
+  background: #006d00;
+}
+
+/* Bargain Modal */
+.customer__bargain-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.customer__bargain-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.customer__price-old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+/* Styles for disabled "Add to Cart" button */
+.customer__product-action--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Old price style */
+.customer__price-old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+/* The rest of your CSS remains the same */
+
+
+.customer__bargain-input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.customer__bargain-submit {
+  background: #f0c14b;
+  color: #111;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.customer__bargain-submit:hover {
+  background: #ddb347;
+}
+
+.customer__bargain-close {
+  background: #e7e7e7;
+  color: #333;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background-color 0.2s;
+}
+
+.customer__bargain-close:hover {
+  background: #d4d4d4;
+}
+
+.customer__bargain-feedback {
+  margin-top: 1rem;
+  color: #007f00;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .customer__product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}

@@ -1,0 +1,66 @@
+.ten {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ background-color: rgba(120, 121, 118, 0.6); /* semi-transparent */
+  color: black;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 50px auto;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.signup-wrapper{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Form inside the container */
+.signup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Input fields & select */
+.one {
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Hover effect on inputs */
+.one:hover {
+  background-color: #f0f0f0;
+}
+
+/* Submit button */
+.two {
+  background-color: green;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.two:disabled {
+  background-color: rgb(155, 44, 44);
+  cursor: not-allowed;
+}
+
+.two:hover:enabled {
+  background-color: darkgreen;
+}

@@ -1,0 +1,118 @@
+.search__container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+}
+
+.search__title {
+  text-align: center;
+  color: #1c1e1c;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Product Grid */
+.search__product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Product Card */
+.search__product-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.search__product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.search__product-image-wrapper {
+  width: 100%;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.search__product-image {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.search__product-info {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.search__product-name {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.search__product-desc {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.search__product-price {
+  color: #B12704;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.search__product-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.search__product-action {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search__product-action--bargain {
+  background: #f0c14b;
+  color: #111;
+}
+
+.search__product-action--bargain:hover {
+  background: #ddb347;
+}
+
+.search__product-action--cart {
+  background: #007f00;
+  color: white;
+}
+
+.search__product-action--cart:hover {
+  background: #006d00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search__product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}

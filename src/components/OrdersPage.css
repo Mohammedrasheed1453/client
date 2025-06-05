@@ -1,0 +1,125 @@
+.orders-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.orders-page__header {
+  color: #007f00;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.orders-page__empty {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.orders-page__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.orders-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.orders-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.orders-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.orders-card__label {
+  font-weight: 600;
+  color: #555;
+  margin-right: 0.5rem;
+}
+
+.orders-card__date,
+.orders-card__address,
+.orders-card__payment {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.orders-card__items {
+  margin-top: 1rem;
+}
+
+.orders-card__items-title {
+  margin: 0 0 0.8rem 0;
+  color: #333;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.orders-card__items-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.orders-card__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.orders-card__item:last-child {
+  border-bottom: none;
+}
+
+.orders-card__item-name {
+  flex: 1;
+  font-weight: 500;
+  color: #222;
+}
+
+.orders-card__item-qty {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.orders-card__item-price {
+  color: #b12704;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .orders-card__info {
+    flex-direction: column;
+  }
+  .orders-card__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+}

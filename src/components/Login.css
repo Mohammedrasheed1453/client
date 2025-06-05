@@ -1,0 +1,40 @@
+.login-wrapper{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.login{
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.127); /* semi-transparent */
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  width: 300px;
+  height: 450px;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px); /* optional, for frosted glass look */
+}
+.bt {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.311);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.bt:hover {
+  background-color: #ddddddd8;
+}
+.three{
+    background-color: green;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}

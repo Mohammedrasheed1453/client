@@ -1,0 +1,58 @@
+/* Container */
+.complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #787976;
+  color: black;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+/* Form inside the container */
+.sell {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Input fields & select */
+.one {
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.six{
+   margin: 10px 0;
+  padding: 10px 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+/* Hover effect on inputs */
+.one:hover {
+  background-color: #f0f0f0;
+}
+
+/* Submit button */
+.two {
+  background-color: green;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+

@@ -1,0 +1,136 @@
+.seller-products-page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.seller-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  color: #2d3748;
+  letter-spacing: 1px;
+}
+
+.seller-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.seller-product-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 20px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.seller-product-card.editing {
+  background: #e7f7ff;
+}
+
+.seller-product-img {
+  width: 100%;
+  max-width: 180px;
+  height: 140px;
+  object-fit: contain;
+  object-position: center center; /* <-- Add this line */
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f7fafc;
+}
+
+
+.seller-product-info {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.seller-product-name {
+  font-size: 1.2rem;
+  color: #273c75;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.seller-product-desc {
+  font-size: 0.97rem;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+.seller-product-price {
+  font-size: 1rem;
+  color: #2d3748;
+  margin-bottom: 2px;
+}
+.seller-product-price.hidden {
+  color: #a0aec0;
+  font-size: 0.95rem;
+}
+
+.seller-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  width: 100%;
+}
+
+.seller-btn {
+  padding: 6px 18px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+.seller-btn.edit {
+  background: #3182ce;
+  color: #fff;
+}
+.seller-btn.delete {
+  background: #e53e3e;
+  color: #fff;
+}
+.seller-btn.save {
+  background: #38a169;
+  color: #fff;
+}
+.seller-btn.cancel {
+  background: #a0aec0;
+  color: #273c75;
+}
+
+.seller-btn:hover {
+  filter: brightness(0.95);
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 97%;
+  padding: 7px 10px;
+  margin-bottom: 9px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #f7fafc;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border: 1.5px solid #3182ce;
+  outline: none;
+}

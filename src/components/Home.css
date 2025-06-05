@@ -1,0 +1,42 @@
+body {
+background: url('Untitled\ design\ \(1\).png') no-repeat center center fixed;
+/* Ensures full viewport height */
+background-size: cover;
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.255);
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  width: 300px;
+  height: 450px;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+}
+
+.bt1 {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.bt1:hover {
+  background-color: #ddd;
+}
