@@ -19,7 +19,7 @@ useEffect(() => {
   Promise.all(
     categoryList.map(cat =>
       axios
-        .get('http://localhost:5000/api/products/category', {
+        .get('https://bidbuy.onrender.com/api/products/api/products/category', {
           params: { category: cat.query, limit: 4 }
         })
         .then(res => ({
