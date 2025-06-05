@@ -59,7 +59,7 @@ const CartPage = () => {
   useEffect(() => {
     const fetchCart = async () => {
       const token = localStorage.getItem('token');
-      const res = await axios.get('http://localhost:5000/api/cart', {
+      const res = await axios.get('https://bidbuy.onrender.com/api/cart', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setCartItems(res.data.items);
