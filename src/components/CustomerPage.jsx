@@ -42,7 +42,7 @@ const CustomerPage = () => {
     }
     try {
       await axios.post(
-        'http://localhost:5000/api/cart/add',
+        'https://bidbuy.onrender.com/api/cart/add',
         { productId, quantity: 1 },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -55,7 +55,7 @@ const CustomerPage = () => {
 
   const handleBid = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/api/products/bargain', {
+      const res = await axios.post('https://bidbuy.onrender.com/api/products/bargain', {
         productId: bargainProduct._id,
         bid: Number(bid)
       });

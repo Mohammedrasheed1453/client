@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 
+=======
+body.body-default {
+    background: url('./bg.png') no-repeat center center fixed;
+         /* Ensures full viewport height */
+          background-size: cover;
+  display: flex;
+  justify-content: center;  /* horizontally center content */
+  align-items: center;      /* vertically center content */
+  height: 100vh;
+  margin: 0;
+  padding-right: 100px;     /* optional: adds space from right edge */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  
+  
+}
+>>>>>>> 76df2cbf3d2c38019532681f58fbc08f232ea1f2
 .seller-welcome {
   padding: 40px 30px;
   text-align: center;

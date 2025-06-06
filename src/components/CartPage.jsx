@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// export default CartPage;
+>>>>>>> 76df2cbf3d2c38019532681f58fbc08f232ea1f2
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './CartPage.css';
