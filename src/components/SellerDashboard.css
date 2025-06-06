@@ -1,24 +1,10 @@
-body.body-default {
-    background: url('Untitled\ design\ \(1\).png') no-repeat center center fixed;
-         /* Ensures full viewport height */
-          background-size: cover;
-  display: flex;
-  justify-content: center;  /* horizontally center content */
-  align-items: center;      /* vertically center content */
-  height: 100vh;
-  margin: 0;
-  padding-right: 100px;     /* optional: adds space from right edge */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 100vh;
-  
-  
-}
+
 .seller-welcome {
   padding: 40px 30px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.08); /* semi-transparent white */
+  background: rgba(255, 255, 255, 0.08); 
   border-radius: 16px;
-  backdrop-filter: blur(10px); /* glassmorphism effect */
+  backdrop-filter: blur(10px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
   max-width: 500px;
   margin: 80px auto;

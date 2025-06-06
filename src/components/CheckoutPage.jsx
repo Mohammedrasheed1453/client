@@ -12,7 +12,7 @@ const CheckoutPage = ({ onOrderPlaced }) => {
     const token = localStorage.getItem('token');
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/orders/place',
+        'https://bidbuy.onrender.com/api/orders/place',
         { address, paymentMode },
         { headers: { Authorization: `Bearer ${token}` } }
       );

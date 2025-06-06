@@ -13,14 +13,14 @@ const AboutPage = () => {
         <p>Your Marketplace for the Best Deals!</p>
       </div>
 
-      {/* Team/Product Photos */}
+    
       <div className="image-grid">
         <img src="offer2.png" alt="Our Team" />
         <img src="offer3.png" alt="Our Products" />
         <img src="offer4.png" alt="Best Deals" />
       </div>
 
-      {/* Our Story */}
+      
       <section className="about-section">
         <h2><FaBookOpen /> Our Story</h2>
         <p>
@@ -29,7 +29,7 @@ const AboutPage = () => {
         </p>
       </section>
 
-      {/* Our Mission */}
+      
       <section className="about-section">
         <h2><FaBullseye /> Our Mission</h2>
         <p>
@@ -38,7 +38,7 @@ const AboutPage = () => {
         </p>
       </section>
 
-      {/* How It Works */}
+    
       <section className="about-section">
         <h2><FaCogs /> How It Works</h2>
         <div className="steps">
@@ -57,7 +57,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Offers/Promotions */}
+      
       <section className="about-section">
         <h2><FaGift /> Current Offers</h2>
         <ul>
@@ -68,7 +68,7 @@ const AboutPage = () => {
         </ul>
       </section>
 
-      {/* Testimonials */}
+    
       <section className="testimonials">
         <h2>What Our Users Say</h2>
         <div className="testimonial-card">
@@ -81,7 +81,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Meet the Team */}
+  
       <section className="about-section">
         <h2><FaUsers /> Meet the Team</h2>
         <p>
@@ -90,13 +90,13 @@ const AboutPage = () => {
         </p>
       </section>
 
-      {/* Sign Up / Login Buttons */}
+      
       <div className="auth-buttons">
         <Link to="/signup" className="auth-button">Sign Up</Link>
         <Link to="/login" className="auth-button">Login</Link>
       </div>
 
-      {/* Contact Info */}
+    
       <section className="contact-section">
         <h2>Contact Us</h2>
         <div className="contact-grid">

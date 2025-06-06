@@ -1,14 +1,13 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './SellerDashboard.css'; // Assuming you have a CSS file for styling
+import './SellerDashboard.css'; 
 
 const SellerDashboard = () => {
   const navigate = useNavigate();
  useEffect(() => {
-      // Set body class for left-aligned layout
+      
       document.body.className = 'body-default';
-      // Optional: Cleanup to remove class when component unmounts
       return () => {
         document.body.className = '';
       };

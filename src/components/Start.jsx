@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import homebg from './homebg.png';
-import './Start.css';
+import './Start.css'; 
 import axios from 'axios';
 
 const categoryList = [
@@ -19,7 +18,7 @@ useEffect(() => {
   Promise.all(
     categoryList.map(cat =>
       axios
-        .get('http://localhost:5000/api/products/category', {
+        .get('https://bidbuy.onrender.com/api/products/category', {
           params: { category: cat.query, limit: 4 }
         })
         .then(res => ({
@@ -33,23 +32,25 @@ useEffect(() => {
 
   return (
     <div className="start-page">
-      {/* Top banner section */}
-      <div
-        className="top-banner"
-        style={{
-          background: `url(${homebg}) no-repeat center center`,
-          backgroundSize: 'cover',
-          minHeight: '400px',
-          width: '100%',
-        }}
-      >
+   <div
+   className="top-banner"
+  style={{
+    backgroundImage: `url('/homebg.png')`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',           
+    backgroundPosition: 'center',     
+    minHeight: '400px',
+    width: '100%',
+  }}
+>
+
         <div className="banner-content">
           <h1>Fashion Changing Always</h1>
           <button onClick={() => navigate('/home')}>Shop Now</button>
         </div>
       </div>
 
-      {/* Categories section */}
+     
       <div className="categories-section">
         {categories.map((cat) => (
           <div key={cat.name} className="category-block">

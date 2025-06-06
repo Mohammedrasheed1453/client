@@ -19,10 +19,10 @@ const SellerPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Get JWT token from localStorage
+      
       const token = localStorage.getItem('token');
       await axios.post(
-        'http://localhost:5000/api/products/add',
+        'https://bidbuy.onrender.com/api/products/add',
         formData,
         {
           headers: {

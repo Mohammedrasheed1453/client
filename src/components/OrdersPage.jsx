@@ -8,7 +8,7 @@ const OrdersPage = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       const token = localStorage.getItem('token');
-      const res = await axios.get('http://localhost:5000/api/orders', {
+      const res = await axios.get('https://bidbuy.onrender.com/api/orders', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setOrders(res.data);

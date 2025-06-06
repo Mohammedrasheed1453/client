@@ -21,7 +21,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Trim fields to avoid whitespace issues
+
     const trimmedData = {
       ...formData,
       name: formData.name.trim(),
@@ -29,7 +29,7 @@ const Signup = () => {
       companyname: formData.companyname.trim()
     };
 
-    // Basic client-side validation
+    
     if (
       !trimmedData.name ||
       !trimmedData.email ||
@@ -42,10 +42,10 @@ const Signup = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/signup', trimmedData);
+      const res = await axios.post('https://bidbuy.onrender.com/api/auth/signup', trimmedData);
       alert(res.data.message);
     } catch (error) {
-      // Show backend message if available
+      
       if (error.response && error.response.data && error.response.data.message) {
         alert(`Error signing up: ${error.response.data.message}`);
       } else {

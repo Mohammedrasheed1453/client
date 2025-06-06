@@ -1,14 +1,4 @@
-body {
-  background: url('bgimg.avif') no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-end; /* Pushes content to the right */
-  align-items: center;        /* Vertically centers it */
-  height: 100vh;
-  margin: 0;
-  padding-right: 100px; /* Optional: adds space from the right edge */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 
 

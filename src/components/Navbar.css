@@ -14,7 +14,7 @@
   backdrop-filter: saturate(180%) blur(10px);
 }
 
-/* Layout sections */
+
 .nav-left {
   flex: 1;
 }
@@ -37,7 +37,7 @@
   width: auto;
 }
 
-/* Nav links */
+
 .nav-right a {
   color: #f0f0f0;
   text-decoration: none;
@@ -68,7 +68,7 @@
   width: 100%;
 }
 
-/* Search */
+
 .nav-search input {
   padding: 8px 14px;
   border-radius: 20px;
@@ -90,7 +90,7 @@
   box-shadow: 0 0 5px #4caf50;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;

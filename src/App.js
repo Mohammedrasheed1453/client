@@ -1,60 +1,10 @@
-// import React from 'react';
-// import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
-// import Signup from './components/Signup'; // Corrected import path
-// import './App.css'
-// function Home() {
-//   const navigate = useNavigate();
-
-//   return (
-//     <div className="App">
-//       <h1>BargainZon</h1>
-//       <button className="one" onClick={() => navigate('/login')}>Login</button>
-//       <button className="one" onClick={() => navigate('/signup')}>Sign Up</button>
-//     </div>
-//   );
-// }
-
-// function App() {
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/Signup" element={<Signup />} />
-//         {/* Add other routes as needed */}
-//       </Routes>
-//     </Router>
-//   );
-// }
-
-// export default App;
-
-
-// import React from 'react';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Home from './components/Home';      // 👈 Correct import
-// import Signup from './components/Signup';  // 👈 Should exist
-// import Login from './components/Login';    // 👈 Should exist (or remove this line if not created)
-
-// function App() {
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/signup" element={<Signup />} />
-//          <Route path="/login" element={<Login />} />
-//       </Routes>
-//     </Router>
-//   );
-// }
-
-// export default App;
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './components/Home';
 import Signup from './components/Signup';
 import Login from './components/Login';
-import SellerPage from './components/SellerPage';     // 👈 Make sure this file exists
-import CustomerPage from './components/CustomerPage'; // 👈 Create this if not already
+import SellerPage from './components/SellerPage';     
+import CustomerPage from './components/CustomerPage'; 
 import Navbar from './components/Navbar';
 import ProductDetailsPage from './components/ProductDetailsPage'
 import SellerProductsPage  from './components/SellerProductsPage';
